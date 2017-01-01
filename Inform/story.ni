@@ -5362,7 +5362,7 @@ carry out vetcheat:
 			level up;
 	decrease score by 400;
 
-understand "turkey" as supersponsor.
+understand "hohoho" as supersponsor.
 
 When play ends:
 	clear the screen;
@@ -5666,6 +5666,7 @@ Include Important Research Quests by Kaleem Mcintyre.
 Include Reservoir by Kaleem Mcintyre.
 Include Misc 4 by Kaleem mcintyre.
 Include Main Storyline by Stripes.
+Include Pet Shop Event by Stripes.
 Include Candy Shop by Stripes.
 Include Bouncy Castle by Stripes.
 Include Sea Lion and Orca for FS by Stripes.
@@ -5997,6 +5998,7 @@ Include Ebonflame Draken by Blue Bishop.
 Include Homo Sapiens by Wahn.
 Include Satyress by Wahn.
 Include Razorback Boar by Wahn.
+Include Imp by Wahn.
 
 [NPCs]
 Include Velos by Blue Bishop.
@@ -6112,6 +6114,7 @@ Include Wendy by Wahn.
 Include Corbin by Wahn.
 Include Anthony by Wahn.
 Include Duke by Wahn.
+Include Skarnoth by Wahn.
 
 [Pets]
 Include Gryphon Companion by Sarokcat.
