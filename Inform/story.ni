@@ -4300,7 +4300,7 @@ This is the turnpass rule:
 			now balloversize is 0;
 			say "     Your massive balls, having become internalized, no longer hinder your movement quite so much.  You can still feel them there, heavily resting inside you, but they're no longer in the way at least.";
 	follow the check heat rule;
-	if libido of player >= 100 and humanity of player > 0 and skipturnblocker is 0:
+	if libido of player >= 99 and humanity of player > 0 and skipturnblocker is 0:
 		say "[spontaneousorgasm]";
 		decrease humanity of player by a random number between 1 and 2;
 		if "Strong Psyche" is listed in feats of player, increase humanity of player by a random number between 0 and 1;
@@ -5362,7 +5362,7 @@ carry out vetcheat:
 			level up;
 	decrease score by 400;
 
-understand "hohoho" as supersponsor.
+understand "newdawn" as supersponsor.
 
 When play ends:
 	clear the screen;
@@ -5430,6 +5430,14 @@ when play ends:
 		now tailname of player is "starvation";
 		now cockname of player is "starvation";
 		say "     You have perished from [if hunger of player >= 100 and thirst of player >= 100]starvation and thirst[otherwise if hunger of player >= 100]starvation[otherwise]thirst[end if] and are no more.  Your body becomes a meal for another of the more predatory creatures roaming the city.";
+	otherwise if bodyname of player is "Demon Slave":
+		say "     Your new reality in hell focuses on satisfying Skarnoth's every desire - of which there are many, mostly carnal ones. As the overlord of his own little demonic realm, your master has the power to play with your body shape too, transforming you as he wishes to better enjoy breaking you to his will...";
+		stop the action;
+	otherwise if bodyname of player is "Communal Orc Fucktoy":
+		say "     The rest of your existence focuses on satisfying the urges of your orcish masters, with barely a moment's rest before the next big brute fucks you in one hole or another.";
+		stop the action;		
+	otherwise if bodyname of player is "dead":
+		stop the action;
 	otherwise if humanity of the player is less than 10 and hp of the player is greater than 0:
 		if bodyname of player is "Dragoness" and hp of doctor matt <= 100:
 			say "Following some unknown instinct, you seek out another of your own, and home in on Orthas, the dragon that was guarding the lab. She pets you gently along your neck and makes soothing sounds that has you almost purring. She proves to be a loving and kind mistress and you protect her fiercely for the remainder of your long life.";
